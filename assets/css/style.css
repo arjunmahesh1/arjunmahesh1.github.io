@@ -1,5 +1,4 @@
 :root {
-  --navy: #002244;
   --royal: #003087; /* PMS 287 C */
   --text: #1a1a1a;
   --muted: #666;
@@ -44,7 +43,7 @@ body {
 }
 
 .site-nav a {
-  color: var(--navy);
+  color: var(--text);
   text-decoration: none;
   margin-left: 1.5rem;
   font-size: 1rem;
@@ -61,18 +60,18 @@ body {
 
 /* Content */
 a {
-  color: var(--navy);
+  color: var(--text);
 }
 
 h1 {
   font-size: 1.4rem;
-  color: var(--navy);
+  color: var(--text);
   margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 1.15rem;
-  color: var(--navy);
+  color: var(--text);
   margin: 1.5rem 0 0.5rem;
 }
 
@@ -126,7 +125,7 @@ ul {
 }
 
 .sub-nav a {
-  color: var(--navy);
+  color: var(--text);
   text-decoration: none;
   margin-right: 1rem;
 }
