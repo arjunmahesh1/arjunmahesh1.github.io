@@ -1,0 +1,161 @@
+:root {
+  --navy: #002244;
+  --text: #1a1a1a;
+  --muted: #666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: #fff;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.site-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.site-name:hover {
+  text-decoration: none;
+}
+
+.site-nav a {
+  color: var(--navy);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.site-nav a:first-child {
+  margin-left: 0;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  text-decoration: underline;
+}
+
+/* Content */
+a {
+  color: var(--navy);
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin: 1.5rem 0 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0 0 1rem 1.25rem;
+}
+
+/* Homepage: bio left, photo right */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.intro-photo {
+  flex-shrink: 0;
+  width: 260px;
+}
+
+.intro-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .intro {
+    flex-direction: column-reverse;
+  }
+  .intro-photo {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Writing sub-navigation (All | Geography) */
+.sub-nav {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.sub-nav a {
+  color: var(--navy);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.sub-nav a:hover,
+.sub-nav a.active {
+  text-decoration: underline;
+}
+
+/* Post lists */
+.post-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 0.75rem;
+}
+
+.post-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
