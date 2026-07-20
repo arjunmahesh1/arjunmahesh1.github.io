@@ -1,5 +1,6 @@
 :root {
   --navy: #002244;
+  --royal: #003087; /* PMS 287 C */
   --text: #1a1a1a;
   --muted: #666;
 }
@@ -34,7 +35,7 @@ body {
 .site-name {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--royal);
   text-decoration: none;
 }
 
